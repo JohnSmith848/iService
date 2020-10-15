@@ -1,40 +1,16 @@
 .body__inner{
 }
 
-.main__banner{
-	height:400px;
-	background:url(../img/banner-background-photo.svg) center/cover no-repeat;
-	background-size: 1440px 400px;
-}
-.main__banner-text{
-	font-family:'Uni Neue';
-	font-weight:800;
-	font-style:italic;
-	max-width:725px;
-	height:400px;
-	margin:0 auto;
-	color:white;
-	font-size:80px;
-	line-height:108px;
-	text-align:center;
-	vertical-align:middle;
-	padding:36px 0 0 0;
-}
-.main__our-services{
-	font-family:'PT Astra Sans', sans-serif;
-	height:250px;
-	max-width:1200px;
-	margin:0 auto;
-	color:#CFD5E6;
-}
+
 .main__what-repare{
-	height:465px;
+	height:445px;
 	max-width:1200px;
 	margin:0 auto;
 	color:#CFD5E6;
 }
 
-.main__h2-header{
+.main__wr-header{
+	margin:25px 0 33px 0;
 	font-size:48px;
 	font-weight:bold;
 	line-height:56px;

@@ -1,0 +1,17 @@
+.main__our-services{
+	font-family:'PT Astra Sans', sans-serif;
+	height:210px;
+	max-width:1200px;
+	margin:0 auto;
+	color:#CFD5E6;
+}
+.main__os-header{
+	margin:39px 0 31px 0;
+	font-size:48px;
+	font-weight:bold;
+	line-height:56px;
+}
+.main__os-text{
+	position:relative;
+	left:-2px;
+}
