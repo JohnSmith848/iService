@@ -48,4 +48,9 @@ li{
 	background-color:#0F1626;
 }
 
+@media(max-width:1200px){
+	.footer__inner{
+		padding:0 15px;
+	}
+}
 

@@ -1,18 +1,14 @@
 .body__inner{
 }
 
-
-.main__what-repare{
-	height:445px;
-	max-width:1200px;
-	margin:0 auto;
-	color:#CFD5E6;
+.callback-form{
+	display:none;
 }
-
-.main__wr-header{
-	margin:25px 0 33px 0;
-	font-size:48px;
-	font-weight:bold;
-	line-height:56px;
+/*The styles for the changing fancybox origin plugin CSS*/
+.fancybox-content{
+	overflow:visible;
 }
-
+.fancybox-slide--html .fancybox-close-small{
+	position:absolute;
+	right:-20px;
+}

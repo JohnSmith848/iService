@@ -24,3 +24,9 @@ whatIsBreakList.addEventListener(
 		}
 	}
 )
+
+
+$('.header__menu-burger').click(function(event){
+	$('.header__menu-burger, .header__menu').toggleClass('burger_active');
+})
+
