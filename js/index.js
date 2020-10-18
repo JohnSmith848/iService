@@ -2,6 +2,9 @@ const whatIsBreakField = document.querySelector('.os-tf-what-is-break');
 const whatIsBreakList = document.querySelector('.os-ddl-what-is-break');
 const whatIsBreakTriangle = document.querySelector('.dft-what-is-break');
 
+const vendorField = document.querySelector('.os-tf-vendor');
+const vendorList = document.querySelector('.os-ddl-vendor');
+const vendorTriangle = document.querySelector('.dft-vendor');
 
 whatIsBreakField.addEventListener(
 	'click',
@@ -25,6 +28,28 @@ whatIsBreakList.addEventListener(
 	}
 )
 
+
+vendorField.addEventListener(
+	'click',
+	function(evt){
+		evt.preventDefault();
+		vendorList.classList.add('dropdown-list_show');
+		vendorTriangle.classList.add('dropdown-field-triangle-up');
+	}
+)
+
+vendorList.addEventListener(
+	'click',
+	function(evt){
+		evt.preventDefault();
+		vendorList.classList.remove('dropdown-list_show');
+		vendorTriangle.classList.remove('dropdown-field-triangle-up');
+		if(vendorList.selectedIndex>=0){
+			vendorField.value=vendorList.options[vendorList.selectedIndex].text;
+			alert(vendorList.selectedIndex);
+		}
+	}
+)
 
 $('.header__menu-burger').click(function(event){
 	$('.header__menu-burger, .header__menu').toggleClass('burger_active');

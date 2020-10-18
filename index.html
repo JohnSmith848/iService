@@ -48,6 +48,14 @@
 							<li class="header__item"><a class="header__link" href="#">Отзывы</a></li>
 							<li class="header__item"><a class="header__link" href="#">О компании</a></li>
 							<li class="header__item"><a class="header__link" href="#">Контакты</a></li>
+							<li class="header__item header__mobile-item">
+								<div class="header__mobile-item-inner">
+									<img class="header__mobile-menu-logo" src="img/logo-m.svg" alt="logo">
+									<p class="header__mobile-text-fs">Москва, ул. Дмитровоградская, 98 </p>
+									<pre class="header__mobile-text-ss">8-800-500-4888   <span class="header__mobile-mail"> info@iservice.ru</span></pre>
+									<button class="header__mobile-callback" data-fancybox data-src="#hidden-callback-form" href="javascript:;">Заказать обратный звонок</button>
+								</div>
+							</li>
 						</ul>
 					</nav>
 					<div class="header__gap-2"></div>
@@ -85,13 +93,13 @@
 							<div class="dropdown-field os-ddf-vendor">
 								<div class="dropdown-field-triangle dft-vendor"></div>
 								<input class="text-field os-tf-vendor" type="text" name="Vendor" placeholder="Производитель">
-								<!--select class="dropdown-list os-ddl-what-is-break" size=7>
-									<option>Разбит экран</option>
-									<option>Пропал звук</option>
-									<option>Просто умер(</option>
-									<option>Фсе ф хлам 0_0</option>
-									<option>Ега не егит, вэга не вэгит >_<</option>
-								</select-->
+								<select class="dropdown-list os-ddl-vendor" size=7>
+									<option>Samsung</option>
+									<option>Apple</option>
+									<option>Huawei</option>
+									<option>Китаиц какой-то</option>
+									<option>No name</option>
+								</select>
 							</div>
 							<div class="dropdown-field os-ddf-model">
 								<div class="dropdown-field-triangle dft-model"></div>
@@ -106,7 +114,7 @@
 							</div>
 							<input class="submit-button uni-link" type="submit" value="Подобрать услуги">
 						</div>
-						<p class="main__os-text">Или <a class="uni-link" href="#">закажите звонок</a> и специалист сам вам позвонит и проконсультирует</p>
+						<p class="main__os-text">Или <a class="uni-link" data-fancybox data-src="#hidden-callback-form" href="javascript:;">закажите звонок</a> и специалист сам вам позвонит и проконсультирует</p>
 					</form>
 					<div class="main__what-repare">
 						<h2 class="main__wr-header">Что мы ремонтируем</h1>
@@ -176,7 +184,7 @@
 								<div class="main__wr-button-text">Фотоаппараты</div>
 							</a>
 						</div>
-						<p class="main__wr-text">Не нашли подходящую услугу <a class="uni-link" href="#">напишите нам</a>, мы что-нибудь придумаем или посоветуем</p>
+						<p class="main__wr-text">Не нашли подходящую услугу <a class="uni-link" data-fancybox data-src="#hidden-callback-form" href="javascript:;">напишите нам</a>, мы что-нибудь придумаем или посоветуем</p>
 					</div>
 				</div>
 			</main>
@@ -185,10 +193,13 @@
 				</div>
 			</footer>
 		</div>
-	<div class="callback-form" id="hidden-callback-form">
-		<h2>Hello</h2>
-		<p>You are awesome.</p>
-	</div>
+	<form class="callback-form" id="hidden-callback-form">
+		<h3 class="callback-form__header">Заказ обратного звонка</h2>
+		<p class="callback-form__text">Оставьте свой номер телефона и специалист перезвонит вам</p>
+		<input class="callback-form__telephone" type="text" name="telephone" placeholder="Номер телефона">
+		<textarea class="callback-form__comment" name="comment" placeholder="Комментарий"></textarea>
+		<input class="callback-form__submit" type="submit" value="Отправить">
+	</form>
 	<!--jQuery-->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	<!--Off-line jQuery import-->

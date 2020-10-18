@@ -39,6 +39,7 @@
 	border:1px solid rgb(42,47,61);
 	border-bottom:1px solid black;
 	color: #CFD5E6;
+	z-index:1;
 }
 
 .text-field::-webkit-input-placeholder{
@@ -61,11 +62,9 @@
 	text-indent:14px;
 	text-overflow:ellipsis;
 }
-
 .dropdown-field{
 	position:relative;
 	display:inline-block;
-	z-index:10;
 }
 .dropdown-field-triangle{
 	position:absolute;
@@ -86,10 +85,12 @@
 
 .dropdown-list{
 	width:285px;
+	height:300px;
 	display:none;
 	position:absolute;
 	background-color:rgb(42,47,61);
 	color: #CFD5E6;
+	z-index:2;
 }
 .dropdown-list_show{
 	display:block;
